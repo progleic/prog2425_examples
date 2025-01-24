@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 int factorial(int n) {
   int r = 1;
@@ -9,8 +8,8 @@ int factorial(int n) {
  
 int main() {
   int n;
-  cout << "n ? ";
-  cin >> n;
-  cout <<  n << "! = " << factorial(n) << "\n";
+  std::cout << "n ? ";
+  std::cin >> n;
+  std::cout <<  n << "! = " << factorial(n) << "\n";
   return 0;
 }
