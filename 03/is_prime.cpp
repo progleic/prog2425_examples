@@ -1,12 +1,15 @@
 
-namespace v1 {
+namespace v1
+{
   // Uses while loop
-  bool is_prime(int n) {
+  bool is_prime(int n)
+  {
     if (n <= 1)
       return false;
-    int i = 2; 
-    while (i < n) {
-      if (n % i == 0) 
+    int i = 2;
+    while (i < n)
+    {
+      if (n % i == 0)
         return false;
       i++;
     }
@@ -14,15 +17,18 @@ namespace v1 {
   }
 }
 
-namespace v2 {
+namespace v2
+{
   // Uses do-while loop
-  bool is_prime(int n) {
-    if (n <= 1) 
-      return false; 
-    if (n == 2) 
+  bool is_prime(int n)
+  {
+    if (n <= 1)
+      return false;
+    if (n == 2)
       return true;
     int i = 2;
-    do {
+    do
+    {
       if (n % i == 0)
         return false;
       i++;
@@ -31,60 +37,72 @@ namespace v2 {
   }
 }
 
-namespace v3 {
+namespace v3
+{
   // Uses for loop
-  bool is_prime(int n) {
+  bool is_prime(int n)
+  {
     if (n <= 1)
       return false;
-    for (int i = 2; i < n; i++) {
-      if (n % i == 0) 
+    for (int i = 2; i < n; i++)
+    {
+      if (n % i == 0)
         return false;
     }
     return true;
   }
 }
 
-namespace v4 {
+namespace v4
+{
   // while(true) loop together with break
-  bool is_prime(int n) {
+  bool is_prime(int n)
+  {
     if (n <= 1)
       return false;
-    int i = 2; 
-    while (true) {
+    int i = 2;
+    while (true)
+    {
       if (i == n || n % i == 0)
         break;
       i++;
     }
-    return i == n; // prime only if i == n 
+    return i == n; // prime only if i == n
   }
 }
 
-namespace v5 {
-  // while loop together with continue 
-  bool is_prime(int n) {
+namespace v5
+{
+  // while loop together with continue
+  bool is_prime(int n)
+  {
     if (n <= 1)
       return false;
-    int i = 2; 
-    while (i < n) {
-      if (n % i != 0) {
+    int i = 2;
+    while (i < n)
+    {
+      if (n % i != 0)
+      {
         i++;
-        continue; 
-      } 
+        continue;
+      }
       return false;
     }
-    return true; 
+    return true;
   }
 }
 
 #include <iostream>
-using namespace std;
 using namespace v5;
 
-int main() {
-  cout << "Prime numbers lower than 100:\n";
-  for (int n = 1; n <= 100; n++) {
-    if (is_prime(n)) {
-      cout << "  "<< n << "\n";
+int main()
+{
+  std::cout << "Prime numbers lower than 100:\n";
+  for (int n = 1; n <= 100; n++)
+  {
+    if (is_prime(n))
+    {
+      std::cout << "  " << n << "\n";
     }
   }
   return 0;
