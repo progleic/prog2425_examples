@@ -1,6 +1,5 @@
 
 #include <iostream>
-using namespace std;
 
 struct a {
   int i;    // 4
@@ -16,6 +15,6 @@ struct b {
 };
 
 int main(void) {
-  cout << sizeof(a) << ' ' << sizeof(b) << '\n';
+  std::cout << sizeof(a) << ' ' << sizeof(b) << '\n';
   return 0;
 }

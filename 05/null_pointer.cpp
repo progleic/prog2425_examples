@@ -1,9 +1,9 @@
 
 #include <iostream>
-using namespace std;
 
-int main() {
-  int* p = nullptr;
-  cout << "p = " << p << '\n';
+int main()
+{
+  int *p = nullptr;
+  std::cout << "p = " << p << '\n';
   return 0;
 }

@@ -10,6 +10,7 @@ class person
 private:
     int pid;
     std::string pname;
+
 public:
     person(int id, const std::string &name);
     person(const person &p);
@@ -22,6 +23,7 @@ class teacher : public person
 {
 private:
     std::string tdepartment;
+
 public:
     teacher(int id, const std::string &name,
             const std::string &dept);
@@ -30,4 +32,3 @@ public:
     void print(std::ostream &out) const /* override */;
 };
 #endif
-

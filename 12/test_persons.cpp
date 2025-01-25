@@ -21,6 +21,6 @@ int main(void)
     // person::print() to get different behaviors.
     rt.print(std::cout);
     pt->print(std::cout);
-    
+
     return 0;
 }

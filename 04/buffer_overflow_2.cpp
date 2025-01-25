@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 struct mydata {
   int a[4];
@@ -13,6 +12,6 @@ int main() {
   //  d.n += d.a[4]  <===> d.n += d.n !!
   for (int i = 0; i <= 4; i++) d.n += d.a[i];
 
-  cout << "d.n = " << d.n << '\n';
+  std::cout << "d.n = " << d.n << '\n';
   return 0;
 }

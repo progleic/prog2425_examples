@@ -1,7 +1,11 @@
 
 #include "shapes.hpp"
 
-using namespace leic;
+using leic::circle;
+using leic::drawing;
+using leic::rectangle;
+using leic::shape;
+using leic::triangle;
 
 int main(void)
 {

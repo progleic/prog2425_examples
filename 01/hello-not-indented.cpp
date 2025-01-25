@@ -1,7 +1,7 @@
 /*                     A simple program that 
 prints       "Hello world!"*/ #include <iostream>
-using 
-
-                  namespace std;int main(
+                        
+                        
+                        int main(
 ){// Print the message
-        cout << "Hello world!\n";return 0;}
+        std::cout << "Hello world!\n";return 0;}

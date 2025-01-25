@@ -1,6 +1,5 @@
 
 #include <iostream>
-using namespace std;
 
 struct point2d {
   double x;
@@ -20,20 +19,20 @@ void sum(const point2d& a, const point2d& b, point2d& r) {
 }
 
 int main() {
-  cout << "sizeof(point2d): " << sizeof(point2d) << '\n';
+  std::cout << "sizeof(point2d): " << sizeof(point2d) << '\n';
  
   point2d a { 1.2, 3.4 };
-  cout << "a: " << a.x << ' ' << a.y << '\n';
+  std::cout << "a: " << a.x << ' ' << a.y << '\n';
 
   point2d b = a;
-  cout << "b: " << a.x << ' ' << b.y << '\n';
+  std::cout << "b: " << a.x << ' ' << b.y << '\n';
 
   point2d s1 = sum(a,b);
-  cout << "s1: " << s1.x << ' ' << s1.y << '\n';
+  std::cout << "s1: " << s1.x << ' ' << s1.y << '\n';
 
   point2d s2; 
   sum(a, b, s2);
-  cout << "s2: " << s2.x << ' ' << s2.y << '\n';
+  std::cout << "s2: " << s2.x << ' ' << s2.y << '\n';
    
   return 0;
 }

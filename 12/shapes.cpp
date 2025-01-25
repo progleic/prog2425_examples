@@ -1,9 +1,14 @@
 
-#include <cassert>
-#include <cmath>
+// For M_PI to work, must be defined before any include of <cmath>,
+// considering transitive includes (includes inside other includes)
+#define _USE_MATH_DEFINES
+
 #include "shapes.hpp"
 
-using namespace std;
+#include <cassert>
+#include <cmath>
+
+using std::vector;
 
 namespace leic
 {
@@ -81,14 +86,14 @@ namespace leic
 
     void polygon::move(const coord2d &movement)
     {
-        for (coord2d &p : points) p += movement;
+        for (coord2d &p : points)
+            p += movement;
     }
 
     // triangle
     triangle::triangle(const coord2d &p1, const coord2d &p2, const coord2d &p3)
         : polygon({p1, p2, p3})
     {
-
     }
 
     // rectangle
@@ -107,9 +112,8 @@ namespace leic
     }
 
     // drawing
-    drawing::drawing() 
+    drawing::drawing()
     {
-
     }
 
     drawing::~drawing()
