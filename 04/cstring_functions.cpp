@@ -1,7 +1,6 @@
 
 #include <iostream>
 #include <cstring>
-using namespace std;
 
 int length(const char str[]) {
   int l = 0;
@@ -34,13 +33,13 @@ int main() {
   copy(s, "Prog");
   concat(s, "#LEIC");
   concat(s, "@UP");
-  cout << length(s) << ' ' << s << '\n'; 
+  std::cout << length(s) << ' ' << s << '\n'; 
 
   // Now using library functions
   strcpy(s, "Prog");
   strcat(s, "#LEIC");
   strcat(s, "@UP");
-  cout << strlen(s) << ' ' <<  s << '\n'; 
+  std::cout << strlen(s) << ' ' <<  s << '\n'; 
  
   return 0;
 }

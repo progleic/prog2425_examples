@@ -1,6 +1,5 @@
 
 #include <iostream>
-using namespace std;
 
 void reverse(const int a[], int b[], int n) {
   for (int i = 0; i < n; i++) {
@@ -17,27 +16,27 @@ void reverse(int a[], int n) {
 }
 
 void print(const int a[], int n) {
-  cout << '[' << a[0];
-  for (int i = 1; i < n; i++) cout << ',' << a[i];
-  cout << "]\n";
+  std::cout << '[' << a[0];
+  for (int i = 1; i < n; i++) std::cout << ',' << a[i];
+  std::cout << "]\n";
 }
 
 int main() {
   int a[5] { 1, 2, 3, 4, 5};
   int b[5];
 
-  cout << "-- a --\n";
+  std::cout << "-- a --\n";
   print(a, 5);
 
-  cout << "-- reverse(a, b, 5) --\n";
+  std::cout << "-- reverse(a, b, 5) --\n";
   reverse(a, b, 5);
   print(b, 5);
 
-  cout << "-- reverse(a, 5) --\n";
+  std::cout << "-- reverse(a, 5) --\n";
   reverse(a, 5);
   print(a, 5);
 
-  cout << "-- reverse(a, a, 5) [does not work correctly!] --\n";
+  std::cout << "-- reverse(a, a, 5) [does not work correctly!] --\n";
   reverse(a, a, 5); // a stays the same!
   print(a, 5);
 
