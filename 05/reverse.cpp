@@ -1,3 +1,4 @@
+#include <iostream>
 
 namespace no_pointer_version
 {
@@ -31,8 +32,6 @@ namespace pointer_version
     }
   }
 }
-
-#include <iostream>
 
 int main()
 {

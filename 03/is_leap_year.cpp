@@ -1,3 +1,4 @@
+#include <iostream>
 
 namespace v1
 {
@@ -34,8 +35,7 @@ namespace v3
   }
 }
 
-#include <iostream>
-using namespace v3;
+using v3::is_leap_year;
 
 int main()
 {

@@ -1,3 +1,5 @@
+#include <iostream>
+
 bool is_leap_year(int y)
 {
   return (y % 4 == 0 && y % 100 != 0) || y % 400 == 0;
@@ -122,11 +124,7 @@ namespace v4
   }
 }
 
-#include <iostream>
-
-// Alternatively, you could write v4::days_in_month
-// Be careful, 'using' will import all symbols in the given namespace
-using namespace v4;
+using v4::days_in_month;
 
 int main()
 {

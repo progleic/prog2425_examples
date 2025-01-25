@@ -1,3 +1,4 @@
+#include <iostream>
 
 // Several different versions of a function
 //   int max(int a, int b)
@@ -65,8 +66,7 @@ namespace v6
   }
 }
 
-#include <iostream>
-using namespace v6;
+using v6::max;
 
 int main()
 {

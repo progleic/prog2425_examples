@@ -1,3 +1,5 @@
+#include <iostream>
+
 namespace v1
 {
   // for loop
@@ -44,8 +46,7 @@ namespace v4
   }
 }
 
-#include <iostream>
-using namespace v2;
+using v2::factorial;
 
 int main()
 {

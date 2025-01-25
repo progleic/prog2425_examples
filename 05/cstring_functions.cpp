@@ -1,3 +1,5 @@
+#include <iostream>
+#include <cstring>
 
 // For the same functions implemented without using pointer arithmetic
 // check https://github.com/progleic/examples/blob/main/04/cstring_functions.cpp
@@ -35,9 +37,6 @@ void concat(char dst[], const char src[])
   }
   *p = '\0';
 }
-
-#include <iostream>
-#include <cstring>
 
 int main()
 {

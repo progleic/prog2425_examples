@@ -1,3 +1,4 @@
+#include <iostream>
 
 namespace v1
 {
@@ -92,8 +93,7 @@ namespace v5
   }
 }
 
-#include <iostream>
-using namespace v5;
+using v5::is_prime;
 
 int main()
 {
