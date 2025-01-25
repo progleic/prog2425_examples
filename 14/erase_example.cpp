@@ -2,21 +2,28 @@
 #include <list>
 #include <vector>
 #include <algorithm>
-using namespace std;
 
-int main(int argc, char** argv) {
-    list<int> c {  2, 0, 1, 0, 2 };
+using std::list;
+
+int main(int argc, char **argv)
+{
+    list<int> c{2, 0, 1, 0, 2};
     auto itr = c.begin();
-    while (itr != c.end()) {
-        if (*itr == 0) {
+    while (itr != c.end())
+    {
+        if (*itr == 0)
+        {
             itr = c.erase(itr);
-        } else {
+        }
+        else
+        {
             itr++;
         }
     }
     // Implicit use of iterator
-    for (int v : c) { 
-        cout << v << '\n'; 
+    for (int v : c)
+    {
+        std::cout << v << '\n';
     }
     return 0;
 }

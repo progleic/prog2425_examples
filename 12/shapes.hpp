@@ -45,12 +45,12 @@ namespace leic
         //! Get X axis radius.
         //! @return Value for radius in the X axis direction.
         double radius_x() const;
-     
+
         //! Get Y axis radius.
         //! @return Value for radius in the Y axis direction.
         double radius_y() const;
         coord2d center() const override final;
-        double area() const override final; 
+        double area() const override final;
         void move(const coord2d &movement) override final;
     };
 
@@ -68,13 +68,14 @@ namespace leic
     public:
         //! Constructor.
         //! @param v Vector of points.
-        polygon(const std::vector<coord2d>& v); 
+        polygon(const std::vector<coord2d> &v);
         //! Get number of points
         //! @return The number of points in the polygon.
         int number_of_points() const;
         double area() const override final;
         coord2d center() const override final;
         void move(const coord2d &movement) override final;
+
     private:
         //! Vector of points.
         std::vector<coord2d> points;
@@ -107,6 +108,7 @@ namespace leic
         //! Shapes must be released with delete by
         //! the drawing destructor.
         std::vector<shape *> shapes;
+
     public:
         //! Construtor.
         drawing();
@@ -114,17 +116,17 @@ namespace leic
         //! Destructor.
         //! It will call delete for all shapes in the vector.
         ~drawing();
-        
+
         //! Add a shape.
         //! @param s Shape to add (should be dynamically allocated).
         void add_shape(shape *s);
-        
+
         //! Move all shapes in the drawing.
         //! @param movement Movement.
         void move_all(const coord2d &movement);
 
         //! Get shapes in drawing.
-        std::vector<shape *>& get_shapes();
+        std::vector<shape *> &get_shapes();
     };
 }
 #endif

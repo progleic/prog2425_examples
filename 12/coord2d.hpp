@@ -20,10 +20,10 @@ namespace leic
         coord2d operator+(const coord2d &c) const;
         coord2d &operator*=(double f);
         coord2d operator*(double f);
+
     private:
         double x;
         double y;
-
     };
     std::ostream &operator<<(std::ostream &out, const coord2d &c);
 }
