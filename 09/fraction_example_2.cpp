@@ -1,8 +1,6 @@
 #include "fraction.hpp"
 
-#include <iostream>
-
-int main(void)
+int main_2(void)
 {
     leic::fraction a(1, 2), b(2, 3), c(1);
     a.mul(b); // 1/2 * 2/3 = 1/3

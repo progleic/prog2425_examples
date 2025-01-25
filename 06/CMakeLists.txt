@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-project(examples_05)
+project(examples_06)
 
 include("../Common.cmake")
 
