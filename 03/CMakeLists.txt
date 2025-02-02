@@ -4,7 +4,7 @@ project(examples_03)
 include("../Common.cmake")
 
 add_executable(days_in_month days_in_month.cpp)
-add_executable(factorial factorial.cpp)
+add_executable(factorial_03 factorial.cpp)
 add_executable(is_leap_year is_leap_year.cpp)
 add_executable(is_prime is_prime.cpp)
 add_executable(reference_variables reference_variables.cpp)
