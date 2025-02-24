@@ -26,15 +26,6 @@ point2d operator+(const point2d &a, const point2d &b) {
 }
 
 int main() {
-  int a = 0xa, b = 20, c = 30;
-  auto d = b + c + 'x';
-
-  char a2 = 'x';
-  short b2 = 2;
-  double a2 = 3.5;
-  int d2 = b2 + 4;
-
-
   std::cout << "sizeof(point2d): " << sizeof(point2d) << '\n';
  
   point2d a { 1.2, 3.4 };
