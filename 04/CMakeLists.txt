@@ -5,6 +5,7 @@ include("../Common.cmake")
 
 add_executable(point2d point2d.cpp)
 add_executable(interval interval.cpp)
+add_executable(struct_in_struct struct_in_struct.cpp)
 add_executable(struct_alignment struct_alignment.cpp)
 add_executable(reverse reverse.cpp)
 add_executable(cstring_functions cstring_functions.cpp)

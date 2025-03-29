@@ -12,6 +12,4 @@ target_link_libraries(fraction_example_2 leic)
 add_executable(polynomial_example_2 polynomial_example.cpp)
 target_link_libraries(polynomial_example_2 leic)
 
-
-
  
